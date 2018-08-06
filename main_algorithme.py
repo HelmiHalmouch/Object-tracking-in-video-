@@ -9,6 +9,14 @@
 
 	TODO: transfor this code using function and class in python
 '''
+# USAGE
+'''
+-create folder named video (past you input_video.mp4 here)
+-python multi_object_tracking.py --video videos/input_video.mp4 --tracker csrt
+-If the key pressed is an “s” for “select”, we’ll manually select bounding box of object to track 
+-If you’re unhappy with your selection you can press “ESCAPE” to reset the selection, otherwise hit “SPACE” or “ENTER” to begin the object tracking.
+-Important: You’ll need to press “s” key and select each object we want to track individually.
+'''
 
 # import the necessary packages
 import cv2
