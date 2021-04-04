@@ -39,21 +39,16 @@ OPENCV_OBJECT_TRACKERS = {
     "medianflow": cv2.TrackerMedianFlow_create,
     "mosse": cv2.TrackerMOSSE_create
 }
-
 # initialize OpenCV's special multi-object tracker
 trackers = cv2.MultiTracker_create()
-
-
 # if a video path was not supplied, grab the reference to the web cam
 if not args.get("video", False):
     print("[INFO] starting video stream...")
     vs = VideoStream(src=0).start()
     time.sleep(1.0)
-
 # otherwise, grab a reference to the video file
 else:
     vs = cv2.VideoCapture(args["video"])
-
 # loop over frames from the video stream
 while True:
     # grab the current frame, then handle if we are using a
